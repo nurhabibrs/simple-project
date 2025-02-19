@@ -2,7 +2,7 @@
     text-align: center;
     width: 100%;
   }
-  
+
   a.tbl-biru {
     background: #3f72af;
     border-radius: 20px;
@@ -12,12 +12,12 @@
     cursor: pointer;
     font-weight: bold;
   }
-  
+
   a.tbl-biru:hover {
     background: #fc5185;
     text-decoration: none;
   }
-  
+
   a.tbl-pink {
     background: #fc5185;
     border-radius: 20px;
@@ -27,7 +27,7 @@
     cursor: pointer;
     font-weight: bold;
   }
-  
+
   a.tbl-pink:hover {
     background: #3f72af;
     text-decoration: none;
@@ -37,24 +37,24 @@
     display: flex;
     margin-bottom: 50px;
   }
-  
+
   p {
     margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
   }
-  
+
   .kolom {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  
+
   .kolom .deskripsi {
     font-size: 20px;
     font-weight: bold;
     font-family: "comic sans ms";
     color: #364f6b;
   }
-  
+
   h2 {
     font-family: "comic sans ms";
     font-weight: 800;
@@ -64,20 +64,42 @@
     width: 100%;
     line-height: 50px;
   }
-  
+
   .tengah {
     text-align: center;
     width: 100%;
   }
-  
+
+  #home img {
+    width: 50%;
+    height: 50%;
+    margin: 50px 10px 10px 10px;
+    border-radius: 1-rem;
+  }
+
+  #courses img {
+    width: 50%;
+    height: 50%;
+    margin: 50px 10px 10px 10px;
+    border-radius: 1-rem;
+  }
+
   @media screen and (max-width: 991.98px) {
     section {
       display: block;
     }
-  
+
     section img {
       display: block;
       width: 100%;
       height: auto;
+    }
+
+    #home img {
+        width: 100%;
+    }
+
+    #courses img {
+        width: 100%;
     }
   }
