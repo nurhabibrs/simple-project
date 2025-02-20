@@ -19,6 +19,27 @@ class DatabaseSeeder extends Seeder
             'remember_token' => null,
         ]);
 
-        Models\Product::factory()->count(5)->create();
+        $image_paths = array(
+            'images/coffe1.jpg',
+            'images/coffe2.jpg',
+            'images/coffe3.jpg',
+            'images/coffe4.jpg',
+            'images/coffe5.jpg',
+        );
+
+        $names = array(
+            'Coffe 1',
+            'Coffe 2',
+            'Coffe 3',
+            'Coffe 4',
+            'Coffe 5',
+        );
+
+        for ($i = 0; $i < count($names); $i++) {
+            Models\Product::factory()->create([
+                'name' => $names[$i],
+                'image_path' => $image_paths[$i],
+            ]);
+        }
     }
 }

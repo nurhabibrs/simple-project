@@ -16,30 +16,12 @@ class ProductFactory extends Factory
      */
     public function definition(): array
     {
-        $image_paths = array(
-            'images/coffe1.jpg',
-            'images/coffe2.jpg',
-            'images/coffe3.jpg',
-            'images/coffe4.jpg',
-            'images/coffe5.jpg',
-        );
-
-        $names = array(
-            'Coffe 1',
-            'Coffe 2',
-            'Coffe 3',
-            'Coffe 4',
-            'Coffe 5',
-        );
-
-        $random_key = random_int(0, 4);
-
         return [
-            'name' => $names[$random_key],
+            'name' => $this->faker->word(),
             'description' => $this->faker->text(),
             'price' => $this->faker->numberBetween(20000, 50000),
             'stock' => $this->faker->numberBetween(1, 100),
-            'image_path' => $image_paths[$random_key],
+            'image_path' => random_bytes(10),
         ];
     }
 }
