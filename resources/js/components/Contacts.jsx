@@ -1,4 +1,4 @@
-import '../styles/Contacs.css'
+import '../styles/Contacts.css'
 import parser from 'html-react-parser'
 
 function Contacts(prop) {

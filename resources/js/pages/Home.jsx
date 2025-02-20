@@ -6,9 +6,9 @@ import parser from 'html-react-parser'
 
 import '..//styles/Home.css'
 import { homeSection } from '../data/HomeSection'
-import { coffeSection } from '../data/CoffeSection'
+import { coffeSection } from '../data/CoffeeSection'
 import { partnerList, partnerSection } from '../data/PartnerSection'
-import { contactSection } from '../data/ContacSection'
+import { contactSection } from '../data/ContactSection'
 
 function Home() {
   return (
@@ -24,9 +24,9 @@ function Home() {
 
             <section id="courses">
                 <div className="kolom">
-                    {parser(coffeSection.content)}
+                    {parser(coffeeSection.content)}
                 </div>
-                <img src={coffeSection.image}/>
+                <img src={coffeeSection.image}/>
             </section>
 
             <section id="partners">

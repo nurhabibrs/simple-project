@@ -1,4 +1,4 @@
-export const coffeSection = {
+export const coffeeSection = {
     image: 'images/coffe1.jpg',
     content: `<p className="deskripsi">Lorem Ipsum dolor sit amor</p>
                     <h2>Lorem Ipsum dolor sit amor</h2>
