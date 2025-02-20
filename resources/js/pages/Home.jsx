@@ -1,14 +1,12 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Tutors from '../components/Tutors'
 import Partners from '../components/Partners'
 import Contacts from '../components/Contacts'
 import parser from 'html-react-parser'
 
 import '..//styles/Home.css'
 import { homeSection } from '../data/HomeSection'
-import { courseSection } from '../data/CourseSection'
-import { tutorSection, tutorList } from '../data/TutorSection'
+import { coffeSection } from '../data/CoffeSection'
 import { partnerList, partnerSection } from '../data/PartnerSection'
 import { contactSection } from '../data/ContacSection'
 
@@ -26,19 +24,9 @@ function Home() {
 
             <section id="courses">
                 <div className="kolom">
-                    {parser(courseSection.content)}
+                    {parser(coffeSection.content)}
                 </div>
-                <img src={courseSection.image}/>
-            </section>
-
-            <section id="tutors">
-                <div className="tengah">
-                    <div className="kolom">
-                        {parser(tutorSection.content)}
-                    </div>
-
-                    <Tutors tutorList={tutorList} />
-                </div>
+                <img src={coffeSection.image}/>
             </section>
 
             <section id="partners">

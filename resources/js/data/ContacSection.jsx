@@ -1,9 +1,5 @@
 export const contactSection = [
     {
-        content: `<h3>Nur Habib</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>`
-    },
-    {
         content: `<h3>About</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>`
     },
@@ -14,6 +10,6 @@ export const contactSection = [
     },
     {
         content: `<h3>Social</h3>
-                    <p><b>YouTube: </b>Programming di Nur Habib</p>`
+                    <p><b>YouTube: </b>Kopi Beni</p>`
     },
 ]
